@@ -54,14 +54,14 @@ button {
 }
 
 .Button {
-  position: relative;
+  position: absolute;
   width: 110px;
   height: 39px;
   margin: 37px 0 0 1210px;
   cursor: pointer;
   background: rgba(0, 0, 0, 0);
   border: none;
-  z-index: 3;
+  z-index: 4;
 }
 
 .group {
@@ -72,7 +72,7 @@ button {
   bottom: 3px;
   background: #d0c4a9;
   border: 1px solid #85a4a4;
-  z-index: 4;
+  z-index: 5;
   border-radius: 9.5px;
 }
 
@@ -92,17 +92,19 @@ button {
   line-height: 15.491px;
   text-align: center;
   white-space: nowrap;
-  z-index: 5;
+  z-index: 6;
 }
 
 .flex-column-bac {
   position: relative;
   width: 865px;
   height: 266px;
-  margin: -35px 0 0 99px;
-  font-size: 0px;
-  z-index: 10;
-  overflow: visible auto;
+  margin: 37px 0 0 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgba(0, 0, 0, 0);
+  z-index: 2;
 }
 
 .claudette {
@@ -193,5 +195,76 @@ button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 2;
+  z-index: -1;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  .flex-column-bac {
+    margin: 60px 20px 0 20px;
+    width: calc(100% - 40px);
+    height: auto;
+    position: relative;
+    z-index: 2;
+    align-items: flex-start;
+  }
+
+  .claudette {
+    font-size: 32px;
+    margin: 0;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .share-history {
+    width: 100%;
+    height: auto;
+    margin: 30px 0 0 0;
+    font-size: 36px;
+    line-height: 1.2;
+    white-space: normal;
+    z-index: 3;
+  }
+
+  .button {
+    position: static;
+    margin: 30px 0 0 0;
+    transform: translateX(0);
+    left: 0;
+    right: auto;
+  }
+
+  .Button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    z-index: 4;
+  }
+
+  .wrapper-3 {
+    right: auto;
+    left: 0;
+  }
+
+  .text-4 {
+    right: auto;
+    left: 19px;
+  }
+
+  .img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .wrapper {
+    padding: 0;
+    position: relative;
+    height: 100vh;
+    z-index: 1;
+  }
 }
