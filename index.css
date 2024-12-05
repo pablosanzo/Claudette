@@ -199,7 +199,7 @@ button {
 }
 
 .social-proof {
-  margin-top: 40px;
+  margin-top: 47px;
 }
 
 .featured-text {
@@ -319,6 +319,6 @@ button {
   }
 
   .social-proof {
-    margin-top: 30px;
+    display: none;
   }
 }
