@@ -147,7 +147,7 @@ button {
   position: relative;
   width: 110px;
   height: 39px;
-  margin: 47px 0 0 0;
+  margin: 30px 0 0 0;
   cursor: pointer;
   background: rgba(0, 0, 0, 0);
   border: none;
@@ -199,20 +199,26 @@ button {
 }
 
 .social-proof {
-  margin-top: 47px;
+  position: fixed;
+  bottom: 12px;
+  left: 94px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  z-index: 1;
 }
 
 .featured-text {
-  font-family: Crimson Pro, var(--default-font-family);
-  font-size: 18px;
-  color: #435B66;
-  margin: 0 0 20px 0;
+  color: #2B4D59;  /* Same as header color */
+  font-family: "Crimson Pro";
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
 }
 
 .profile {
   display: flex;
   align-items: center;
-  gap: 15px;
 }
 
 .profile-image {
@@ -220,6 +226,11 @@ button {
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.subheader {
+  position: relative;
+  z-index: 2;
 }
 
 /* Mobile styles */
@@ -294,5 +305,11 @@ button {
 
   .social-proof {
     display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .button {
+    margin-top: 80px;  /* Much larger spacing for desktop */
   }
 }
