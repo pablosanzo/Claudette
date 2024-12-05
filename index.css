@@ -209,11 +209,17 @@ button {
 }
 
 .featured-text {
-  color: #2B4D59;  /* Same as header color */
+  background: linear-gradient(2deg, #D0C4A9, #E5DBC7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-family: "Crimson Pro";
   font-size: 20px;
   font-weight: 500;
   margin: 0;
+  text-shadow: 
+    -1px -1px 0 rgba(255, 255, 255, 0.15),
+    1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 .profile {
@@ -226,6 +232,9 @@ button {
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
+  box-shadow: 
+    -1px -1px 0 rgba(255, 255, 255, 0.15),
+    1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 .subheader {
