@@ -198,6 +198,56 @@ button {
   z-index: -1;
 }
 
+.social-proof {
+  margin-top: 40px;
+}
+
+.featured-text {
+  font-family: Crimson Pro, var(--default-font-family);
+  font-size: 18px;
+  color: #435B66;
+  margin: 0 0 20px 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-name {
+  font-family: Inter, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 600;
+  color: #2B4D59;
+  margin: 0;
+}
+
+.profile-twitter {
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  color: #497285;
+  text-decoration: none;
+  margin: 0;
+}
+
+.profile-twitter:hover {
+  text-decoration: underline;
+}
+
 /* Mobile styles */
 @media screen and (max-width: 768px) {
   .flex-column-bac {
@@ -266,5 +316,9 @@ button {
     position: relative;
     height: 100vh;
     z-index: 1;
+  }
+
+  .social-proof {
+    margin-top: 30px;
   }
 }
