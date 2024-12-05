@@ -1,0 +1,197 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main-container {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1;
+}
+
+.Button {
+  position: relative;
+  width: 110px;
+  height: 39px;
+  margin: 37px 0 0 1210px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  z-index: 3;
+}
+
+.group {
+  position: absolute;
+  width: 103px;
+  height: 32px;
+  right: 3px;
+  bottom: 3px;
+  background: #d0c4a9;
+  border: 1px solid #85a4a4;
+  z-index: 4;
+  border-radius: 9.5px;
+}
+
+.contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 69px;
+  height: 16px;
+  right: 19px;
+  bottom: 12px;
+  color: #4f4a40;
+  font-family: Inter, var(--default-font-family);
+  font-size: 12.800000190734863px;
+  font-weight: 600;
+  line-height: 15.491px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 5;
+}
+
+.flex-column-bac {
+  position: relative;
+  width: 865px;
+  height: 266px;
+  margin: -35px 0 0 99px;
+  font-size: 0px;
+  z-index: 10;
+  overflow: visible auto;
+}
+
+.claudette {
+  display: block;
+  position: relative;
+  height: 27px;
+  margin: 0 0 0 0;
+  font-family: Crimson Pro, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  background: linear-gradient(29.35deg, #2B4D59, #497285);
+  z-index: 9;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.share-history {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  width: 865px;
+  height: 106px;
+  margin: 47px 0 0 0;
+  font-family: Crimson Pro, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 53.344px;
+  text-align: left;
+  background: linear-gradient(182.2deg, #435B66, #A2B5BB);
+  z-index: 10;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button {
+  position: relative;
+  width: 110px;
+  height: 39px;
+  margin: 47px 0 0 0;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  z-index: 6;
+}
+
+.wrapper-3 {
+  position: absolute;
+  width: 103px;
+  height: 32px;
+  right: 3px;
+  bottom: 3px;
+  background: #d0c4a9;
+  border: 1px solid #85a4a4;
+  z-index: 7;
+  border-radius: 9.5px;
+}
+
+.text-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 69px;
+  height: 16px;
+  right: 19px;
+  bottom: 12px;
+  color: #4f4a40;
+  font-family: Inter, var(--default-font-family);
+  font-size: 12.800000190734863px;
+  font-weight: 600;
+  line-height: 15.491px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 8;
+}
+
+.img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(./assets/images/503d7eac662aae4a33824684f89c8f761f65f73a.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
