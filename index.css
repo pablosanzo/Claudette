@@ -154,7 +154,7 @@ button {
 
 .button {
   position: relative;
-  width: 110px;
+  width: 160px;
   height: 39px;
   margin: 30px 0 0 0;
   z-index: 6;
@@ -162,7 +162,7 @@ button {
 
 .wrapper-3 {
   position: absolute;
-  width: 103px;
+  width: 153px;
   height: 32px;
   right: 3px;
   bottom: 3px;
@@ -177,7 +177,7 @@ button {
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 69px;
+  width: 119px;
   height: 16px;
   right: 19px;
   bottom: 12px;
